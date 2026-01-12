@@ -1,0 +1,18 @@
+/** Fonts */
+@font-face {
+    font-family: "Heroarcher";
+    src: url("assets/fonts/Heroarcher-Regular.woff2") format("woff2");
+      // url("assets/fonts/Bellefair-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  $logo-family: "Heroarcher", serif;
+  $font-family: "Gochi Hand", cursive;
+  $header-family: "Boogaloo", serif;
+  
+  body {
+    font-family: $font-family;
+  }
+  

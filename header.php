@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> <?php blankslate_schema_type(); ?>>
-<head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width">
-<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-<div id="branding">
-<div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<?php
-if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; }
-echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home" itemprop="url"><span itemprop="name">' . esc_html( get_bloginfo( 'name' ) ) . '</span></a>';
-if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; }
-?>
-</div>
-<div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
-</div>
-<nav id="menu" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'blankslate' ); ?>" itemscope itemtype="https://schema.org/SiteNavigationElement">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-<div id="search" role="search" aria-label="<?php esc_attr_e( 'Search', 'blankslate' ); ?>"><?php get_search_form(); ?></div>
-</nav>
-</header>
-<div id="container">
-<main id="content" role="main">
+    <head>
+        <meta charset="<?php bloginfo( 'charset' ); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="https://gmpg.org/xfn/11">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Gochi+Hand&display=swap" rel="stylesheet">
+        <!-- jQuery Modal -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <link rel="stylesheet" href="<?php echo site_url(); ?>/style.css">
+        <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+        <?php wp_head(); ?>
+    </head>
+    <style>
+        .woocommerce-breadcrumb {
+            display: none;
+        }
+    </style>
+    <body <?php body_class(); ?>>
+        <?php wp_body_open(); ?>
+        <div id="wrapper" class="hfeed">
+            <header id="header" role="banner">
+                <?php get_template_part( 'template-parts/header-top-bar' ); ?>
+                <?php get_template_part( 'template-parts/header-main-navigation' ); ?>
+                <!-- <?php get_template_part( 'template-parts/header-filters' ); ?> -->
+            </header>
+            <div id="container" class="container">
+                <!-- <main id="content" role="main"> -->
