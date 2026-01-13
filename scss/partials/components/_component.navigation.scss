@@ -1,0 +1,10 @@
+/** Navigation style */
+
+.header__top-bar {
+    display: none;
+    @include screen-greater-than(tablet)
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+}

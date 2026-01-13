@@ -23,7 +23,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 @import "partials/fonts.all";
 @import "partials/variables";
 
-// @import "partials/tools/mixins";
+@import "partials/tools/mixins";
 // //@import "partials/tools/mediaqueries";
 
 // @import "partials/structure/structure.blocks";
@@ -32,5 +32,5 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 // @import "partials/elements.all";
 
 
-// @import "partials/components.all";
-// @import "partials/elements.all";
+@import "partials/components.all";
+@import "partials/elements.all";

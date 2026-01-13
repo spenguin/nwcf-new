@@ -24,8 +24,7 @@
         <div id="wrapper" class="hfeed">
             <header id="header" role="banner">
                 <?php get_template_part( 'template-parts/header-top-bar' ); ?>
-                <?php get_template_part( 'template-parts/header-main-navigation' ); ?>
-                <!-- <?php get_template_part( 'template-parts/header-filters' ); ?> -->
+                <?php get_template_part( 'template-parts/header-hero-section' ); ?>
             </header>
             <div id="container" class="container">
                 <!-- <main id="content" role="main"> -->

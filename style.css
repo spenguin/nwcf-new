@@ -1148,4 +1148,62 @@ body {
   display: none;
 }
 
+/** Mixins */
+/**
+Function to generate an RGB colour backgrund with a provided opacity
+(https://stackoverflow.com/questions/10929458/sass-converting-hex-to-rgba-for-background-opacity)
+*/
+/*
+element {
+     @include background-opacity(#333, 0.5);
+}*/
+/**
+Function to wrap appropriate media query around content
+param: screen size, either tablet or desktop 
+Requires breakpoints to be set or imported
+*/
+/**
+Function to provide necessary prefixes for grayscale (sic) filter
+param: percentage filtered
+Note: Yes, this should probably take a parameter of _which_ filter to apply. Maybe next time
+http://shouldiprefix.com/#filters
+*/
+/** Component Aggregator */
+/** Navigation style */
+.header__top-bar {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__top-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/** Header styles */
+.header__hero-section--title {
+  display: flex;
+  justify-content: center;
+}
+.header__hero-section--title h1 {
+  font-family: "Heroarcher", serif;
+  color: yellow;
+  -webkit-text-stroke: 1px #000000;
+}
+
+/** Elements aggregator */
+/** Headings styles */
+/** Buttons style */
+.btn {
+  color: white;
+  background-color: black;
+  border-radius: 0.1875rem;
+  text-transform: uppercase;
+  font-family: "Gochi Hand", cursive;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.5rem 1.25rem !important;
+  box-shadow: 7px 7px 0 -3px #0D0D0D !important;
+}
+
 /*# sourceMappingURL=style.css.map */

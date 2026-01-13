@@ -1,0 +1,11 @@
+/** Header styles */
+
+.header__hero-section--title {
+    display: flex;
+    justify-content: center;
+    h1 {
+        font-family: $logo-family;
+        color: yellow;
+        -webkit-text-stroke: 1px #000000;
+    }
+}
