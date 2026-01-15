@@ -11,10 +11,15 @@
         Join us for a one-day comic market & indie creator expo!
     </div>
     <div class="header__hero-section--location">
-        11th April 2026 - Sapperton - Sapperton Community Hall
+        <p>11th April 2026</p>
+        <p>11am to 5pm</p>
+        <p>Sapperton Community Hall</p>
     </div>
     <div class="header__hero-section--ctas">
         <a href="" class="btn btn__hot-cta">Buy Tickets</a>
         <a href="" class="btn btn__cta">Exhibit</a>
+    </div>
+    <div class="header__hero-section--callouts">
+        <p><span>60+</span> Exhibitors</p>
     </div>
 </div>

@@ -1125,6 +1125,8 @@ textarea {
 }
 
 /** Colours*/
+/* SCSS HEX */
+/* SCSS Gradient */
 /** Fonts */
 @font-face {
   font-family: "Heroarcher";
@@ -1184,11 +1186,45 @@ http://shouldiprefix.com/#filters
 .header__hero-section--title {
   display: flex;
   justify-content: center;
+  padding: 0 2%;
 }
 .header__hero-section--title h1 {
   font-family: "Heroarcher", serif;
-  color: yellow;
-  -webkit-text-stroke: 1px #000000;
+  color: #fcdf58;
+  -webkit-text-stroke: 2px #1a455d;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3.25rem;
+  margin-bottom: 1rem;
+}
+.header__hero-section--subtitle {
+  padding: 0 4%;
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.header__hero-section--location p {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+.header__hero-section--ctas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+.header__hero-section--callouts {
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.header__hero-section--callouts span {
+  color: #1a455d;
+  font-size: 3rem;
 }
 
 /** Elements aggregator */
@@ -1200,10 +1236,24 @@ http://shouldiprefix.com/#filters
   border-radius: 0.1875rem;
   text-transform: uppercase;
   font-family: "Gochi Hand", cursive;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   padding: 0.5rem 1.25rem !important;
   box-shadow: 7px 7px 0 -3px #0D0D0D !important;
+  text-decoration: none;
+  border: 1px solid #1a455d;
+}
+.btn__hot-cta {
+  background-color: #b83534;
+}
+.btn__hot-cta:hover {
+  background-color: rgb(236, 109, 109);
+}
+.btn__cta {
+  background-color: #1a455d;
+}
+.btn__cta:hover {
+  background-color: #578e9e;
 }
 
 /*# sourceMappingURL=style.css.map */

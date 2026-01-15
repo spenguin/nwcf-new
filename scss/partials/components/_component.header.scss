@@ -1,11 +1,49 @@
 /** Header styles */
 
-.header__hero-section--title {
-    display: flex;
-    justify-content: center;
-    h1 {
-        font-family: $logo-family;
-        color: yellow;
-        -webkit-text-stroke: 1px #000000;
+.header__hero-section {
+    &--title {
+        display: flex;
+        justify-content: center;
+        padding: 0 2%;
+        h1 {
+            font-family: $logo-family;
+            color: $royal-gold;
+            -webkit-text-stroke: 2px $yale-blue;
+            font-size: 3rem;
+            text-align: center;
+            line-height: 3.25rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &--subtitle {
+        padding: 0 4%;
+        font-size: 1.75rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    &--location {
+        p {
+            text-align: center;
+            margin-bottom: 0;
+            font-size: 1.25rem;
+        }
+    }
+    &--ctas {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid black;
+    }
+    &--callouts {
+        font-size: 1.25rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+        justify-content: center;
+        span {
+            color: $yale-blue;
+            font-size: 3rem;
+        }
     }
 }
