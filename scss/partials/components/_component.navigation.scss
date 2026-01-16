@@ -2,6 +2,10 @@
 
 .header__top-bar {
     display: none;
+    height: 45px;
+    padding-top: .5rem;
+    padding-left: 2%;
+    padding-right: 2%;
     @include screen-greater-than(tablet)
     {
         display: flex;

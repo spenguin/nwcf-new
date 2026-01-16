@@ -3,11 +3,11 @@
  * Header Top Bar links
  */
 ?>
-<div class="header__top-bar max-wrapper">
+<div class="header__top-bar max-wrapper shadowbox">
     <div class="header__top-bar--social-media">
-        <a href="" class="social-media__facebook">Fb</a>
-        <a href="" class="social-media__twitter">Tw</a>
-        <a href="" class="social-media__instagram">Ig</a>
+        <a href="" class="social-media__facebook"><i class="fab fa-facebook-square text-2xl mx-4 md:text-4xl text-white"></i></a>
+        <a href="" class="social-media__twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="" class="social-media__instagram"><i class="fab fa-instagram text-2xl mx-4 md:text-4xl text-white"></i></a>
     </div>
     <div class="header__top-bar--primary">
         <a href="" class="header__top-bar--home">Home</a>
