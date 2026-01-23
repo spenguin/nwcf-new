@@ -16,6 +16,6 @@
     </div>
     <div class="header__top-bar--ctas"> 
         <a href="" class="btn btn__hot-cta">Buy Tickets</a>
-        <a href="" class="btn btn__cta">Exhibit</a>
+        <a href="<?php echo site_url(); ?>/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
     </div>   
 </div>

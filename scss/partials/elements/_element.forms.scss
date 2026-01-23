@@ -1,0 +1,36 @@
+/** Forms styles */
+
+form {
+    background-color: $bone;
+    border-radius: $borderRadius;
+    border: 1px solid $yale-blue;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2%;
+    font-size: 1.25rem;
+    max-width: $maxWidth-Narrow;
+    label {
+        display: block;
+        // font-size: 1.25rem
+    }
+    input {
+        width: 100%;
+        border: 1px solid $pacific-cyan;
+        border-radius: $borderRadius;
+        &[type=submit] {
+            width: auto;
+            padding: 5px 8px;
+            background-color: $royal-gold;
+            display:block;
+            border: 1px solid $pacific-cyan;
+            border-radius: $borderRadius;
+            margin-top: 0.5rem;            
+        }
+        &[type=radio] {
+            display: inline;
+            width: 10%;
+            text-align: left;
+        }
+    }
+
+}

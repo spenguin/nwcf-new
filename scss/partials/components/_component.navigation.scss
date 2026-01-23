@@ -3,12 +3,46 @@
 .header__top-bar {
     display: none;
     height: 45px;
-    padding-top: .5rem;
     padding-left: 2%;
     padding-right: 2%;
+    align-items: center;
     @include screen-greater-than(tablet)
     {
         display: flex;
         justify-content: space-between;
+    }
+    &--social-media,
+    &--primary {
+        a {
+            text-decoration: none;
+            color: $yale-blue;
+            margin-right: 0.85rem;
+            font-size: 1.35rem;
+            &:hover {
+                color: $tomato-jam;
+            }
+        } 
+    } 
+    &--ctas {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }  
+}
+.mobile-navigation {
+    font-size: 1.35rem;
+    padding-left: 5%;
+    width: 90%;
+    @include screen-greater-than( tablet )
+    {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        color: $yale-blue;
+        margin-right: 0.85rem;
+        &:hover {
+            color: $tomato-jam;
+        }
     }
 }

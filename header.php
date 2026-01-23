@@ -23,6 +23,7 @@
         <?php wp_body_open(); ?>
         <div id="wrapper" class="hfeed">
             <header id="header" role="banner">
+                <?php get_template_part( 'template-parts/mobile-navigation' ); ?>
                 <?php get_template_part( 'template-parts/header-top-bar' ); ?>
                 <?php get_template_part( 'template-parts/header-hero-section' ); ?>
             </header>
