@@ -21,6 +21,7 @@ define( 'CORE_SHORTCODE', CORE_INC . 'shortcodes/' );
 define( 'CORE_VENDOR', CORE_PATH . 'vendor/' );
 define( 'CORE_DIST', CORE_URL . '/js/dist/' );
 define( 'CORE_JS', CORE_URL . '/js/' );
+define( 'CORE_PARTIALS', CORE_PATH . 'partials/' );
 
 require_once CORE_INC . 'blank-slate.php';
 require_once CORE_INC . 'metaboxes.php';
