@@ -1,0 +1,25 @@
+/** Section styles */
+
+.home section {
+    // margin-left: 5%;
+    // margin-right: 5%;
+}
+
+.store-front-open {
+    background-color: $OHGrey;
+    padding-left: 5%;
+    padding-right: 5%;
+    // margin-left: -5%!important;
+    // margin-right: -5%!important;
+    padding-bottom: 1rem;
+    h2 {
+        color: $OHWhite;
+    }
+}
+
+.homepage--newsletter-signup {
+    background-color: $OHLightGreen;
+    padding: 1.25rem 5%;
+    margin-left: -5%;
+    margin-right: -5%;
+}

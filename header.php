@@ -11,7 +11,7 @@
         <!-- jQuery Modal -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <link rel="stylesheet" href="<?php echo site_url(); ?>/style.css">
-        <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
+        <title><?php bloginfo('name'); ?> | <?php echo get_the_title(); ?> | <?php bloginfo('description'); ?></title>
         <?php wp_head(); ?>
     </head>
     <style>
@@ -25,7 +25,7 @@
             <header id="header" role="banner">
                 <?php get_template_part( 'template-parts/mobile-navigation' ); ?>
                 <?php get_template_part( 'template-parts/header-top-bar' ); ?>
-                <?php get_template_part( 'template-parts/header-hero-section' ); ?>
+                <?php //get_template_part( 'template-parts/header-hero-section' ); ?>
             </header>
             <div id="container" class="container">
                 <!-- <main id="content" role="main"> -->

@@ -1175,6 +1175,26 @@ param: percentage filtered
 Note: Yes, this should probably take a parameter of _which_ filter to apply. Maybe next time
 http://shouldiprefix.com/#filters
 */
+/** Structure aggregator */
+/** WRappers styles */
+.max-wrapper {
+  padding: 0 5%;
+}
+@media screen and (min-width: 768px) {
+  .max-wrapper {
+    padding: 0 15%;
+  }
+}
+.max-wrapper__narrow {
+  max-width: 729px;
+  margin: 0 auto;
+}
+
+.cta--wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 /** Component Aggregator */
 /** Navigation style */
 .header__top-bar {
@@ -1277,12 +1297,14 @@ http://shouldiprefix.com/#filters
   padding-top: 1.2rem;
 }
 .footer__secondary {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 1.25rem 2%;
   background-color: #1a455d;
   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0px, rgba(255, 255, 255, 0.1) 2px, transparent 2px, transparent 4px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 2px, transparent 2px, transparent 4px);
+}
+.footer__secondary--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .footer__secondary a {
   color: white;
