@@ -13,7 +13,7 @@ function ws_apply_form( $atts = [], $content = null, $tag = '' )
         if( 0 == $previous )
         {
             // redirect to Google form
-            wp_redirect( 'https://docs.google.com/forms/d/e/1FAIpQLScxkNeF8FwcUV0CF_0yvUNqHXQRsCKdN2SMl22mCXpStVyoSg/viewform?usp=publish-editor' );
+            wp_redirect( 'https://docs.google.com/forms/d/e/1FAIpQLScxkNeF8FwcUV0CF_0yvUNqHXQRsCKdN2SMl22mCXpStVyoSg/viewform?usp=header' );
             exit;
         } else {
             $o = "Cool. I have your details already.";

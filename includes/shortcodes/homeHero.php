@@ -13,6 +13,7 @@ function initialise()
 
 function homeHero()
 {
+    $siteUrl    = site_url();
     $o = <<<EOD
         <div class="header__hero-section max-wrapper">
             <div class="header__hero-section--title">
@@ -28,7 +29,7 @@ function homeHero()
             </div>
             <div class="header__hero-section--ctas">
                 <a href="" class="btn btn__hot-cta">Buy Tickets</a>
-                <a href="<?php echo site_url(); ?>/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
+                <a href="$siteUrl/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
             </div>
             <div class="header__hero-section--callouts">
                 <p><span>60+</span> Exhibitors</p>

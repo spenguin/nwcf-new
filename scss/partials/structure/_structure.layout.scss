@@ -1,0 +1,13 @@
+/** Layout structures */
+
+.two-column-wrapper {
+    @include screen-greater-than(tablet) {
+        display: flex;
+        .two-column__main {
+            width: 55%;
+        }
+        .two-column__sidebar {
+            width: 43%;
+        }
+    }
+}

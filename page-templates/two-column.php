@@ -10,7 +10,16 @@ get_header(); ?>
             <?php the_content(); ?>
         </div>
         <div class="two-column__sidebar">
-            <p>Sidebar</p>
+            <?php 
+                if( $post->post_title == "Apply to Exhibit" ): ?>
+                    <div class=" sidebar shadowbox">
+                        <h2>Table Info</h2>
+                        <p>Half table (3 foot): $40</p>
+                        <p>Full table (6 foot): $70</p>
+
+                    </div>
+
+                <?php endif; ?>
         <div>
     </div>
 <?php

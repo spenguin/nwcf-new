@@ -1195,6 +1195,24 @@ http://shouldiprefix.com/#filters
   justify-content: center;
 }
 
+/** Layout structures */
+@media screen and (min-width: 768px) {
+  .two-column-wrapper {
+    display: flex;
+  }
+  .two-column-wrapper .two-column__main {
+    width: 55%;
+  }
+  .two-column-wrapper .two-column__sidebar {
+    width: 43%;
+  }
+}
+
+/** Structure styling */
+.container {
+  margin-top: 2rem;
+}
+
 /** Component Aggregator */
 /** Navigation style */
 .header__top-bar {
@@ -1330,6 +1348,26 @@ http://shouldiprefix.com/#filters
   justify-content: space-evenly;
 }
 
+/** Sidebar styles */
+.sidebar {
+  margin-top: 1.75rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: #578e9e;
+  box-shadow: 5px 2px 2px #333 !important;
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    margin-top: 0;
+  }
+}
+.sidebar p {
+  margin-bottom: 0.5rem;
+}
+
 /** Elements aggregator */
 /** Headings styles */
 h2 {
@@ -1350,7 +1388,7 @@ h2 {
   box-shadow: 7px 7px 0 -3px #0D0D0D !important;
   text-decoration: none;
   border: 1px solid #1a455d;
-  height: 40px;
+  min-height: 40px;
 }
 .btn__hot-cta {
   background-color: #b83534;
