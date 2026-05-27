@@ -5,17 +5,17 @@
 ?>
 <div class="header__top-bar max-wrapper shadowbox">
     <div class="header__top-bar--social-media">
-        <a href="" class="social-media__facebook"><i class="fab fa-facebook-square text-2xl mx-4 md:text-4xl text-white"></i></a>
-        <a href="" class="social-media__twitter"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="" class="social-media__instagram"><i class="fab fa-instagram text-2xl mx-4 md:text-4xl text-white"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61578407721581" class="social-media__facebook" target="_blank"><i class="fab fa-facebook-square text-2xl mx-4 md:text-4xl text-white"></i></a>
+        <!-- <a href="" class="social-media__twitter"><i class="fa-brands fa-x-twitter"></i></a> -->
+        <a href="https://www.instagram.com/newwestcomicfest/" class="social-media__instagram" target="_blank"><i class="fab fa-instagram text-2xl mx-4 md:text-4xl text-white"></i></a>
     </div>
     <div class="header__top-bar--primary">
         <a href="<?php echo site_url(); ?>" class="header__top-bar--home">Home</a>
         <a href="<?php echo site_url(); ?>/about" class="header__top-bar--about">About</a>
-        <a href="<?php echo site_url(); ?>/faq" class="header__top-bar--faq">FAQ</a>
+        <!-- <a href="<?php echo site_url(); ?>/faq" class="header__top-bar--faq">FAQ</a> -->
     </div>
     <div class="header__top-bar--ctas"> 
-        <a href="<?php echo site_url(); ?>/buy-tickets" class="btn btn__hot-cta">Buy Tickets</a>
+        <!-- <a href="<?php echo site_url(); ?>/buy-tickets" class="btn btn__hot-cta">Buy Tickets</a> -->
         <a href="<?php echo site_url(); ?>/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
     </div>   
 </div>

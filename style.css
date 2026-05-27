@@ -1358,6 +1358,21 @@ http://shouldiprefix.com/#filters
   padding-top: 0.5rem;
   background-color: #578e9e;
   box-shadow: 5px 2px 2px #333 !important;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.sidebar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/K17136.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
 }
 @media screen and (min-width: 768px) {
   .sidebar {

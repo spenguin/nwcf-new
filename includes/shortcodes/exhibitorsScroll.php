@@ -7,7 +7,7 @@
 
 function exhibitorsScroll( $atts )
 {
-
+return;
     $url        = "https://bccomicfest.dev.weirdspace.xyz/wp-json/exhibitors-api/v1/fetch-exhibitors";
 
     $url    = add_query_arg( [
