@@ -16,6 +16,11 @@ function ws_apply_form( $atts = [], $content = null, $tag = '' )
             wp_redirect( 'https://docs.google.com/forms/d/e/1FAIpQLScxkNeF8FwcUV0CF_0yvUNqHXQRsCKdN2SMl22mCXpStVyoSg/viewform?usp=header' );
             exit;
         } else {
+            $name   = wp_filter_nohtml_kses( $_POST['exhibitor_name'] );
+            $email  = wp_kses( $_POST['email'], [] );
+            $message= 'Name: ' . $name . '<br>Email: ' . $email;
+
+            wp_mail( 'info@weirdspace.com', 'NWCF 2026 Applicant', $message );
             $o = "Cool. I have your details already.";
         }
     } else {

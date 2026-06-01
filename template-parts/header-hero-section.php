@@ -11,12 +11,12 @@
         Join us for a one-day comic market & indie creator expo!
     </div>
     <div class="header__hero-section--location">
-        <p>11th April 2026</p>
+        <p>26th September 2026</p>
         <p>11am to 5pm</p>
         <p>Sapperton Community Hall</p>
     </div>
     <div class="header__hero-section--ctas">
-        <a href="" class="btn btn__hot-cta">Buy Tickets</a>
+        <!-- <a href="" class="btn btn__hot-cta">Buy Tickets</a> -->
         <a href="<?php echo site_url(); ?>/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
     </div>
     <div class="header__hero-section--callouts">
