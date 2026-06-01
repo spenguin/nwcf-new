@@ -20,8 +20,8 @@ get_header(); ?>
                     </div>
 
                 <?php endif; ?>
-        <div>
+        </div>
     </div>
 <?php
     // get_template_part( 'nav', 'below' );
-    // get_footer();
+    get_footer();

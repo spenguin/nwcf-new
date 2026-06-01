@@ -22,11 +22,11 @@
 			<div class="footer__secondary--wrapper max-wrapper__narrow">
 				<div class="footer--social-media">
 
-					<a href="https://www.facebook.com/occasionallyhoney/" target="_blank">
+					<a href="https://www.facebook.com/profile.php?id=61578407721581" target="_blank">
 						<i class="fab fa-facebook-square text-2xl mx-4 md:text-4xl text-white"></i>
 					</a>
 
-					<a href="https://www.instagram.com/occasionallyhoney/" target="_blank">
+					<a href="https://www.instagram.com/newwestcomicfest/" target="_blank">
 						<i class="fab fa-instagram text-2xl mx-4 md:text-4xl text-white"></i>
 					</a>
 
