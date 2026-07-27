@@ -1383,6 +1383,37 @@ http://shouldiprefix.com/#filters
   margin-bottom: 0.5rem;
 }
 
+/** Tabling styles */
+.table-list li {
+  margin-bottom: 1.25rem;
+}
+.table-list li .btn {
+  background-color: #b83534;
+}
+
+/** Styling for Exhibitors scroll on Home Page */
+.exhibitors-display__count {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.exhibitors-display__count span {
+  color: #578e9e;
+  font-size: 3rem;
+}
+.exhibitors-display__vertical {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+.exhibitors-display__vertical--exhibitor {
+  margin-right: 2rem;
+}
+.exhibitors-display a {
+  text-decoration: none;
+  color: #404040;
+}
+
 /** Elements aggregator */
 /** Headings styles */
 h2 {

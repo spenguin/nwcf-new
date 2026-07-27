@@ -31,9 +31,6 @@ function homeHero()
                 <!--<a href="" class="btn btn__hot-cta">Buy Tickets</a>-->
                 <a href="$siteUrl/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
             </div>
-            <div class="header__hero-section--callouts">
-                <p><span>60+</span> Exhibitors</p>
-            </div>
         </div>
     EOD;
 

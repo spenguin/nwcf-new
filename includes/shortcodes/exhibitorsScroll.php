@@ -7,7 +7,7 @@
 
 function exhibitorsScroll( $atts )
 {
-return;
+
     $url        = "https://bccomicfest.dev.weirdspace.xyz/wp-json/exhibitors-api/v1/fetch-exhibitors";
 
     $url    = add_query_arg( [
@@ -23,11 +23,25 @@ return;
     $data       = json_decode( $body ); //pvd($data);
 
     $o = [];
-    if ( ! empty( $data ) ) {
-        foreach ( $data as $d ) {
-            $o[]    = '<div class="exhibitor">' . esc_html( $d->title ) . '</div>';
-        }
+    if ( ! empty( $data ) ) { 
+        ob_start();
+        ?>
+        <div class="exhibitors-display">
+            <div class="exhibitors-display__count">
+                <p><a href="/exhibitors"><span><?php echo count($data); ?></span> Exhibitors</a></p>
+            </div>
+            <a href="/exhibitors">
+                <div class="exhibitors-display__vertical">
+                    <?php
+                        foreach ( $data as $d ) {
+                            echo '<div class="exhibitors-display__vertical--exhibitor">' . esc_html( $d->title ) . '</div>';
+                        }
+                    ?>
+                </div>
+            </a>
+        </div>
+        <?php
     }
 
-    return join(' ', $o);
+    return ob_get_clean();
 }

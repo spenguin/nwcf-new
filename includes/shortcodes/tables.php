@@ -19,6 +19,8 @@ function tables( $atts = [], $content = null, $tag = '' )
         <div class="max-wrapper__narrow">
             <h2>Purchase your Exhibition Space</h2>
             <p>Thank you so much for applying to exhibit at New West Comic Fest 2026. All you need to do now is select the size of table you want and pay for it.</p>
+            <p>If you want a half-table, just select the half-table and go through to the Checkout page.</p>
+            <p>If you want one or more full tables, just select full table. You'll be able to select the number of full tables you want on the Cart page.</p>
             <ul class="table-list">
             <?php
                 if( $query->have_posts()): while( $query->have_posts()): $query->the_post(); 
@@ -27,7 +29,7 @@ function tables( $atts = [], $content = null, $tag = '' )
                 
                 ?>
                     <li>
-                        <?php the_title();  ?> &dollar;<?php echo $_product->get_regular_price(); ?>
+                        <?php the_title();  ?> &dollar;<?php echo number_format($_product->get_regular_price(), 2); ?>
                         <a href="<?php echo site_url(); ?>/cart/?add-to-cart=<?php echo $_productID; ?>" class="btn btn__buy-now">Buy Now</a>
                     </li>
 

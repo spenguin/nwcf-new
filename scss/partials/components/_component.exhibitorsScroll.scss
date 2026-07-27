@@ -1,0 +1,25 @@
+/** Styling for Exhibitors scroll on Home Page */
+
+.exhibitors-display {
+    &__count {
+        display:flex;
+        justify-content: center;
+        font-size: 2rem;
+        span {
+            color: $pacific-cyan;
+            font-size: 3rem;
+        }
+    }
+    &__vertical {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        &--exhibitor {
+            margin-right: 2rem;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #404040;
+    }
+}
