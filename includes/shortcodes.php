@@ -6,6 +6,8 @@ require_once CORE_SHORTCODE . 'ws_apply_form.php';
 require_once CORE_SHORTCODE . 'homeHero.php';
 require_once CORE_SHORTCODE . 'exhibitorsScroll.php';
 require_once CORE_SHORTCODE . 'tables.php'; 
+require_once CORE_SHORTCODE . 'exhibitorsPresented.php';
+require_once CORE_SHORTCODE . "poster.php";
 
 \Shortcodes\initialize();
 

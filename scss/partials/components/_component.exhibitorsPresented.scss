@@ -1,0 +1,19 @@
+/** Exhibitors Presented style */
+
+.exhibitors-presented__list {
+    display: flex;
+    flex-wrap: wrap;
+    &--exhibitor {
+        width: 200px;
+        height: 200px;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        box-shadow: 1px 3px 3px $yale-blue;
+        margin-bottom: 2rem;
+        border: 1px solid $pacific-cyan;
+        overflow: hidden;
+        position: relative;
+    }
+}

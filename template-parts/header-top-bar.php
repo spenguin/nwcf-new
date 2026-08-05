@@ -15,7 +15,7 @@
         <!-- <a href="<?php echo site_url(); ?>/faq" class="header__top-bar--faq">FAQ</a> -->
     </div>
     <div class="header__top-bar--ctas"> 
-        <!-- <a href="<?php echo site_url(); ?>/buy-tickets" class="btn btn__hot-cta">Buy Tickets</a> -->
-        <a href="<?php echo site_url(); ?>/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a>
+        <a href="<?php echo site_url(); ?>/buy-tickets" class="btn btn__hot-cta">Buy Tickets</a>
+        <!-- <a href="<?php echo site_url(); ?>/apply-to-exhibit" class="btn btn__cta">Apply for a Table</a> -->
     </div>   
 </div>
