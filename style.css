@@ -1424,13 +1424,17 @@ http://shouldiprefix.com/#filters
   height: 200px;
   margin-right: 1rem;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.35rem;
   line-height: 1.5rem;
   box-shadow: 1px 3px 3px #1a455d;
   margin-bottom: 2rem;
   border: 1px solid #578e9e;
   overflow: hidden;
   position: relative;
+  color: #1a455d;
+}
+.exhibitors-presented__list--exhibitor.reverse {
+  color: #fafaf9;
 }
 
 /** Elements aggregator */

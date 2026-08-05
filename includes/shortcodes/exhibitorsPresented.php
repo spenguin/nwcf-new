@@ -22,6 +22,7 @@ function exhibitorsPresented( $atts )
     }
     $body       = wp_remote_retrieve_body( $response );
     $data       = json_decode( $body ); //pvd($data);
+    $pattern    = '/<img.+?src=["\']([^"\']+)["\']/i';
 
     $o = [];
     if ( ! empty( $data ) ) { 
@@ -34,7 +35,17 @@ function exhibitorsPresented( $atts )
                 <div class="exhibitors-presented__list">
                     <?php
                         foreach ( $data as $d ) {
-                            echo '<div class="exhibitors-presented__list--exhibitor">' . esc_html( $d->title ) . '</div>';
+                            if( empty( $d->icon ) )
+                            {
+                                $backgroundStyle = '';
+                                $backgroundClass = '';
+                            } else {
+                                preg_match_all( $pattern, $d->icon, $matches ); //pvd($matches[1]);
+                                $backgroundStyle = "background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('" . $matches[1][0] . "'); background-size:cover;background-position:center;";
+                                $backgroundClass = "reverse";
+                            
+                            }
+                            echo '<div class="exhibitors-presented__list--exhibitor ' . $backgroundClass . '" style="' . $backgroundStyle . '">' . esc_html( $d->title ) . '</div>';
                         }
                     ?>
                 </div>

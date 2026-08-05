@@ -8,6 +8,7 @@ require_once CORE_SHORTCODE . 'exhibitorsScroll.php';
 require_once CORE_SHORTCODE . 'tables.php'; 
 require_once CORE_SHORTCODE . 'exhibitorsPresented.php';
 require_once CORE_SHORTCODE . "poster.php";
+require_once CORE_SHORTCODE . 'tickets.php';
 
 \Shortcodes\initialize();
 
