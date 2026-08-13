@@ -25,4 +25,14 @@
             background-color: $pacific-cyan;
         }
     }
+    &__popup {
+        background-color: $yale-blue;
+        color: $bone;
+        padding: .25rem .625rem !important;
+        box-shadow: 3px 3px 0 -1px $pacific-cyan;
+        font-size: .85rem;
+        &:hover {
+            color: $royal-gold;
+        }
+    }
 }

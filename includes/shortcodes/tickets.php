@@ -23,8 +23,14 @@ $products = wc_get_products( $args );
             <ul class="table-list">
                 <?php
                     foreach( $products as $product ): ?>
-                        <li>
-                            <?php echo $product->name; ?> &dollar;<?php echo $product->regular_price; ?>
+                        <li style="font-size: 2rem;">
+                            <?php echo $product->name; ?> 
+                            <?php if( $product->sale_price ): ?>
+                                &dollar;<span class="strikeout" style="text-decoration: line-through;"><?php echo $product->regular_price; ?></span> 
+                                <span style="font-weight:bold; color: red; ">&dollar;<?php echo $product->sale_price; ?></span>
+                            <?php else: ?>
+                                &dollar;<?php echo $product->regular_price; ?></span> 
+                            <?php endif; ?>
                             <a href="<?php echo site_url(); ?>/cart/?add-to-cart=<?php echo $product->get_id(); ?>" class="btn btn__buy-now">Buy Now</a>
                         </li>
                     <?php endforeach;

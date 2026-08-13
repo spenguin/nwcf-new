@@ -1471,6 +1471,16 @@ h2 {
 .btn__cta:hover {
   background-color: #578e9e;
 }
+.btn__popup {
+  background-color: #1a455d;
+  color: #dbd0c0;
+  padding: 0.25rem 0.625rem !important;
+  box-shadow: 3px 3px 0 -1px #578e9e;
+  font-size: 0.85rem;
+}
+.btn__popup:hover {
+  color: #fcdf58;
+}
 
 /** Shadowbox style */
 .shadowbox {
@@ -1509,6 +1519,42 @@ form input[type=radio] {
   display: inline;
   width: 10%;
   text-align: left;
+}
+
+/** Popup styles */
+.popup {
+  position: absolute;
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  z-index: 1;
+}
+.popup.hidden {
+  display: none;
+}
+
+.popup__open {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  margin-top: -20px;
+  border: 1px solid black;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
